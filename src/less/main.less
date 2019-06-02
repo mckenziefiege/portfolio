@@ -6,6 +6,99 @@
 
 }
 
+.row {
+  display: flex;
+  // flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+
+  img {
+    vertical-align: middle;
+    width: 100%;
+    margin: 20px;
+    cursor: pointer;
+  }
+}
+
+.portfolio__container {
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.portfolio__image {
+  display: block;
+  width: 100%;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: @orange;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .6s ease;
+  margin-left: 20px;
+}
+
+.portfolio__container:hover .portfolio__overlay {
+  width: 100%;
+}
+
+.text {
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+// @media screen and (max-width: 800px) {
+//   .column {
+//     -ms-flex: 50%;
+//     flex: 50%;
+//     max-width: 50%;
+//   }
+// }
+//
+// @media screen and (max-width: 600px) {
+//   .column {
+//     -ms-flex: 100%;
+//     flex: 100%;
+//     max-width: 100%;
+//   }
+// }
+
+p {
+  margin: 0;
+}
+
+// colors
+@pink: rgba(223, 193, 182);
+@orange: rgba(245, 182, 97);
+@blue: rgba(137, 188, 195);
+
+.content {
+  margin: 0 auto;
+  display: block;
+  width: 1400px;
+}
+
 .header {
   font-family: 'Nunito Sans', sans-serif;
 
@@ -28,7 +121,7 @@
 
   &__secondary {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
 }
 
@@ -70,15 +163,30 @@
   }
 
   &__title {
-
+    text-transform: uppercase;
   }
 
   &__span {
     display: flex;
+    align-items: center;
+
+    p, a {
+      margin: 5px;
+    }
+
+    .project-description {
+      font-style: italic;
+    }
+
+    .project-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
   }
 
   &__position {
-
+    font-size: 18px;
+    font-weight: 700;
   }
 
   &__company {
@@ -90,18 +198,31 @@
   }
 
   &__location {
-
+    font-style: italic;
   }
 
   &__institute {
-
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 
 .portfolio {
 
+  // &__image {
+  //   width: 100%;
+  // }
+}
+
+.about-me {
+
   &__image {
-    height: 240px;
-    width: 460px;
+    max-width: 400px;
+    height:auto;
+    border-radius: 50%;
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
   }
 }
