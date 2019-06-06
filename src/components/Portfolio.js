@@ -75,7 +75,7 @@ class Portfolio extends Component {
             </Link>
           </div>
           <div className="column">
-            <Link to="/">
+            <Link to="/novel-finds">
               <div className="portfolio__container">
                 <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/52527609-b2080800-2c99-11e9-975f-46a84a74f569.png" alt="Novel Finds"/>
                 <div className="portfolio__overlay">
@@ -83,7 +83,7 @@ class Portfolio extends Component {
                 </div>
               </div>
             </Link>
-            <Link to="/">
+            <Link to="/event-planner">
               <div className="portfolio__container">
                 <img className="portfolio__image" src={eventPlanner} alt="Event Planner"/>
                 <div className="portfolio__overlay">
@@ -91,7 +91,7 @@ class Portfolio extends Component {
                 </div>
               </div>
             </Link>
-            <Link to="/">
+            <Link to="/turbo-typing">
               <div className="portfolio__container">
                 <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/53203236-9fc18e80-35f6-11e9-9a5a-75c9a3312d6f.png" alt="Turbo Typing"/>
                 <div className="portfolio__overlay">
@@ -99,7 +99,7 @@ class Portfolio extends Component {
                 </div>
               </div>
             </Link>
-            <Link to="/">
+            <Link to="/plant-diary">
               <div className="portfolio__container">
                 <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/49955133-1db73a00-fed0-11e8-94e8-0f9b46ac0451.png" alt="Plant Diary"/>
                 <div className="portfolio__overlay">

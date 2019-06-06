@@ -9,6 +9,7 @@ import NovelFinds from './NovelFinds'
 import PlantDiary from './PlantDiary'
 import TurboTyping from './TurboTyping'
 import EventPlanner from './EventPlanner'
+import HomePage from './HomePage'
 
 class App extends Component {
   render () {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/event-planner" component={EventPlanner}/>
             <Route path="/plant-diary" component={PlantDiary}/>
             <Route path="/turbo-typing" component={TurboTyping}/>
+            <Route path="/" component={HomePage}/>
           </Switch>
         </div>
       </div>

@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 
+
+
+body {
+  margin: 0;
+}
+
 .list {
 
 }
@@ -36,36 +42,46 @@
 .portfolio__image {
   display: block;
   width: 100%;
+  filter: grayscale(90%);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  transition: transform .5s;
+
+
+  &:hover {
+    filter: none;
+    transform: scale(.98);
+  }
 }
 
-.portfolio__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: @orange;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .6s ease;
-  margin-left: 20px;
-}
-
-.portfolio__container:hover .portfolio__overlay {
-  width: 100%;
-}
-
+// .portfolio__overlay {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: @orange;
+//   overflow: hidden;
+//   width: 0;
+//   height: 100%;
+//   transition: .6s ease;
+//   margin-left: 20px;
+// }
+//
+// .portfolio__container:hover .portfolio__overlay {
+//   width: 100%;
+// }
+//
 .text {
-  font-family: 'Nunito Sans', sans-serif;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  // font-family: 'Nunito Sans', sans-serif;
+  // color: white;
+  // font-size: 20px;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // -webkit-transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+  // white-space: nowrap;
+  display: none;
 }
 
 // @media screen and (max-width: 800px) {
@@ -89,15 +105,76 @@ p {
 }
 
 // colors
-@pink: rgba(223, 193, 182);
-@orange: rgba(245, 182, 97);
-@blue: rgba(137, 188, 195);
+// @pink: rgba(223, 193, 182);
+// @orange: rgba(245, 182, 97);
+// @blue: rgba(137, 188, 195);
+// @yellow: rgba(242, 207, 136);
+// @red: rgba(250, 126, 104);
+
+@orange: rgb(202, 118, 89);
+@green: rgb(91, 118, 75);
+@blue: rgb(71, 105, 115);
 
 .content {
-  margin: 0 auto;
+  // margin: 0 auto;
   display: block;
-  width: 1400px;
+  width: 1200px;
+
 }
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 700px;
+  margin-top: 15%;
+
+}
+
+.homepage__text {
+  font-size: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.homepage__name {
+  color: darken(@orange, 5%);
+}
+
+.homepage__button {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 10px;
+  cursor: pointer;
+  width: 190px;
+  transition: all .3s;
+
+  .svg {
+    height: 0;
+    width: 0;
+    transition: all .3s;
+  }
+
+  &:hover {
+    width: 230px;
+    background-color: black;
+    color: white;
+
+    .svg {
+      height: 20px;
+      width: 30px;
+      margin-left: 10px;
+      fill: white;
+    }
+  }
+}
+
+
+
+
 
 .header {
   font-family: 'Nunito Sans', sans-serif;
@@ -110,18 +187,21 @@ p {
 
   &__link {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
   }
 
   &__primary {
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin: 0;
   }
 
   &__secondary {
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 12px;
+    margin: 0;
   }
 }
 
@@ -129,17 +209,25 @@ p {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  background-color: @blue;
 
   &__link {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
   }
+
+  li {
+    color: white;
+  }
 }
 
 .resume {
   font-family: 'Nunito Sans', sans-serif;
+  padding: 50px;
 
 
   &__skills {
@@ -164,6 +252,7 @@ p {
 
   &__title {
     text-transform: uppercase;
+    color: @orange;
   }
 
   &__span {
@@ -225,4 +314,27 @@ p {
             -webkit-shape-outside: circle(50% at 50% 50%);
             shape-outside: circle(50% at 50% 50%);
   }
+
+  &__container {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    // width: 600px;
+  }
+
+  &__item {
+    margin: 20px;
+  }
+}
+
+
+.project__image {
+  width: 400px;
+  height: auto;
 }
