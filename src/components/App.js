@@ -9,13 +9,14 @@ import NovelFinds from './NovelFinds'
 import PlantDiary from './PlantDiary'
 import TurboTyping from './TurboTyping'
 import EventPlanner from './EventPlanner'
+import HomePage from './HomePage'
 
 class App extends Component {
   render () {
     return (
       <div>
         <Header />
-        <div>
+        <div className="content">
           <Switch>
             <Route path="/about" component={AboutMe}/>
             <Route path="/portfolio" component={Portfolio}/>
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/event-planner" component={EventPlanner}/>
             <Route path="/plant-diary" component={PlantDiary}/>
             <Route path="/turbo-typing" component={TurboTyping}/>
+            <Route path="/" component={HomePage}/>
           </Switch>
         </div>
       </div>

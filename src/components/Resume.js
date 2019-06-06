@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
 class Resume extends Component {
   render () {
@@ -14,8 +13,8 @@ class Resume extends Component {
           <div>
             <span className="resume__span">
               <p className="resume__position">Front End Development Apprentice</p>
-              <p className="resume__company">JW Player</p>
-              <p className="resume__date">March 2019  - present</p>
+              <p className="resume__company"> | JW Player |</p>
+              <p className="resume__date">March 2019  - present |</p>
               <p className="resume__location">New York, NY</p>
             </span>
             <ul className="list">
@@ -29,8 +28,8 @@ class Resume extends Component {
           <div>
             <span className="resume__span">
               <p className="resume__position">Shift Manager/Barista</p>
-              <p className="resume__company">Jitters Cafe</p>
-              <p className="resume__date">Jan. 2015 - June 2018</p>
+              <p className="resume__company"> | Jitters Cafe | </p>
+              <p className="resume__date">2015 - 2018 | </p>
               <p className="resume__location">Rochester, NY</p>
             </span>
             <ul className="list">
@@ -43,8 +42,8 @@ class Resume extends Component {
           <div>
             <span className="resume__span">
               <p className="resume__position">Field Archaeologist</p>
-              <p className="resume__company">Jezreel Valley Regional Project</p>
-              <p className="resume__date">June 2017 - July 2017</p>
+              <p className="resume__company"> | Jezreel Valley Regional Project | </p>
+              <p className="resume__date">2017 | </p>
               <p className="resume__location">Legio, Jezreel Valley, Israel</p>
             </span>
             <ul className="list">
@@ -58,9 +57,9 @@ class Resume extends Component {
           <h2 className="resume__title">Side Projects</h2>
           <div>
             <span className="resume__span">
-              <p>Novel Finds</p>
-              <p>An online diary to write about your plants and organize plant-related tasks</p>
-              <p>GitHub</p>
+              <p className="project-title">Novel Finds</p>
+              <p className="project-description">An online diary to write about your plants and organize plant-related tasks</p>
+              <a href="https://github.com/mckenziefiege/book_club_frontend">GitHub</a>
             </span>
             <ul className="list">
               <li className="resume__text">React frontend application utilizing  Redux as the state management tool</li>
@@ -70,9 +69,9 @@ class Resume extends Component {
           </div>
           <div>
             <span className="resume__span">
-              <p>Turbo Typing</p>
-              <p>Typing game to test how many words a user types per minute </p>
-              <p>GitHub</p>
+              <p className="project-title">Turbo Typing</p>
+              <p className="project-description">Typing game to test how many words a user types per minute </p>
+              <a href="https://github.com/mckenziefiege/turbo-typing-revamped">GitHub</a>
             </span>
             <ul className="list">
               <li className="resume__text">Built with a vanilla JavaScript frontend to handle user typing events</li>
@@ -81,9 +80,9 @@ class Resume extends Component {
           </div>
           <div>
             <span className="resume__span">
-              <p>Plant Diary</p>
-              <p>An online diary to write about your plants and organize plant-related tasks</p>
-              <p>GitHub</p>
+              <p className="project-title">Plant Diary</p>
+              <p className="project-description">An online diary to write about your plants and organize plant-related tasks</p>
+              <a href="https://github.com/mckenziefiege/plant_diary">GitHub</a>
             </span>
             <ul className="list">
               <li className="resume__text">Rails application implementing RESTful routes and an MVC pattern to handle CRUD actions</li>
@@ -95,9 +94,9 @@ class Resume extends Component {
           <h2 className="resume__title">Education</h2>
           <div>
             <span className="resume__span">
-              <p className="resume__institute">Flatiron School</p>
+              <p className="resume__institute">Flatiron School | </p>
               <p className="resume__location">New York, NY</p>
-              <p className="resume__date">2018</p>
+              <p className="resume__date">| 2018</p>
             </span>
             <ul className="list">
               <li className="resume__text">15-week Full Stack Web Development, Ruby on Rails and JavaScript immersive program</li>
@@ -105,9 +104,9 @@ class Resume extends Component {
           </div>
           <div>
             <span className="resume__span">
-              <p className="resume__institute">SUNY College at Brockport</p>
+              <p className="resume__institute">SUNY College at Brockport |</p>
               <p className="resume__location">Brockport, New York</p>
-              <p className="resume__date">2017</p>
+              <p className="resume__date"> | 2017</p>
             </span>
             <ul className="list">
               <li className="resume__text">BS in Psychology, Minor in Anthropology,  Magna Cum Laude</li>
@@ -124,7 +123,7 @@ class Resume extends Component {
               <p className="resume__date">April 2019</p>
             </span>
             <ul className="list">
-              <li className="resume__text">Chatbot diabetes prevention app - React // Blockstack</li>
+              <li className="resume__text">Chatbot diabetes prevention app - React // Blockstack<a href="https://github.com/jkhaha/hackathon-app">GitHub</a></li>
             </ul>
           </div>
         </div>
