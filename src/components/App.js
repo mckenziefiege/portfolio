@@ -12,6 +12,7 @@ import EventPlanner from './EventPlanner'
 import HomePage from './HomePage'
 
 class App extends Component {
+
   render () {
     return (
       <div>

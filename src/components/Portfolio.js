@@ -10,6 +10,7 @@ import playQueue from '../images/play-queue-v2.png'
 import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
+  
   render () {
     return (
       <div className="portfolio">
