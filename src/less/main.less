@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,900&display=swap');
 
 // COLOR VARIABLES
 @pink: rgba(223, 193, 182);
@@ -10,14 +10,12 @@
 // @orange: rgba(245, 182, 97);
 // @blue: rgba(137, 188, 195);
 
-
-// FONT
-@font: 'Nunito Sans', sans-serif;
-
-
 body {
   margin: 0;
 }
+
+// FONT
+@font: 'Nunito Sans', sans-serif;
 
 .list {
 
@@ -43,8 +41,7 @@ body {
 .portfolio__container {
   position: relative;
   vertical-align: middle;
-  width: 100%;
-  margin: 20px;
+  width: 90%;
   cursor: pointer;
 }
 
@@ -72,54 +69,70 @@ p {
 
 .content {
   display: block;
-  width: 1200px;
 }
 
 .homepage {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 700px;
-  margin-top: 15%;
+  background: linear-gradient(to right bottom, @orange, #f3f5f8);
 
+  color: #f3f5f8;
+  height: 100vh;
+  width: 100%;
+
+  &__container {
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border: 30px solid #f3f5f8;
+    margin: auto;
+        transform: translateY(20%);
+    width: 60%;
+   padding: 50px;
+  }
 
   &__text {
-    font-size: 50px;
+    font-size: 45px;
     font-family: @font;
+    font-weight: 900;
+
   }
 
   &__name {
-    color: darken(@orange, 5%);
+    color: rgb(28, 48, 59);
+
   }
 
   &__button {
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     font-family: @font;
     background-color: transparent;
-    border: 3px solid black;
-    padding: 10px;
+    border: 3px solid rgb(28, 48, 59);
+    padding: 15px;
+    margin-top: 50px;
     cursor: pointer;
-    width: 190px;
+    width: 220px;
     transition: all .3s;
+    color: rgb(28, 48, 59);
+    backface-visibility: hidden;
+    font-weight: 700;
 
     .svg {
       height: 0;
       width: 0;
       transition: all .3s;
+      color: #f3f5f8;
     }
 
     &:hover {
-      width: 230px;
-      background-color: black;
-      color: white;
+      width: 260px;
+      color: #f3f5f8;
+      border-color: #f3f5f8;
 
       .svg {
         height: 20px;
         width: 30px;
         margin-left: 10px;
-        fill: white;
+        fill: #f3f5f8;
       }
     }
   }
@@ -136,7 +149,7 @@ p {
 
   &__link {
     text-decoration: none;
-    color: white;
+    color: 	rgb(28, 48, 59);
     text-transform: uppercase;
   }
 
@@ -159,24 +172,32 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   margin: 0;
-  background-color: @blue;
 
   &__link {
     text-decoration: none;
-    color: black;
+    color: rgb(28, 48, 59);
     text-transform: uppercase;
   }
 
-  li {
-    color: white;
+  &__section--2 {
+    display: flex;
+
+    .nav__link {
+      margin: 0 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
   }
+
 }
 
 .resume {
   font-family: @font;
   padding: 50px;
+  background-color: lighten(@orange, 30%);
+  color: 	rgb(28, 48, 59);
 
 
   &__skills {
@@ -246,6 +267,7 @@ p {
 }
 
 .portfolio {
+    background: linear-gradient(to right bottom, @orange, #f3f5f8);
 
   &__image {
 
@@ -253,15 +275,15 @@ p {
 }
 
 .about-me {
+  background-color: lighten(@orange, 30%);
+  padding: 50px;
+  color: rgb(28, 48, 59);
 
   &__image {
     max-width: 400px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     height:auto;
-    border-radius: 50%;
-    -webkit-clip-path: circle(50% at 50% 50%);
-            clip-path: circle(50% at 50% 50%);
-            -webkit-shape-outside: circle(50% at 50% 50%);
-            shape-outside: circle(50% at 50% 50%);
+    border-radius: 2px;
   }
 
   &__container {
@@ -274,10 +296,17 @@ p {
   &__text {
     font-family: @font;
     font-size: 18px;
+    margin: 50px;
   }
 
   &__item {
     margin: 20px;
+  }
+
+  &__intro-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -314,50 +343,50 @@ p {
   }
 }
 
+.contact__svg {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  transition: all .3s;
 
+  &:hover {
+    transform: scale(1.1);
+    transform: translateY(-5px);
+  }
+}
 
-// WORKING LESS
-// .portfolio__overlay {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background-color: @orange;
-//   overflow: hidden;
-//   width: 0;
-//   height: 100%;
-//   transition: .6s ease;
-//   margin-left: 20px;
-// }
-//
-// .portfolio__container:hover .portfolio__overlay {
-//   width: 100%;
-// }
-//
-// .text {
-  // font-family: @font;
-  // color: white;
-  // font-size: 20px;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // -webkit-transform: translate(-50%, -50%);
-  // -ms-transform: translate(-50%, -50%);
-  // transform: translate(-50%, -50%);
-  // white-space: nowrap;
-// }
-// @media screen and (max-width: 800px) {
-//   .column {
-//     -ms-flex: 50%;
-//     flex: 50%;
-//     max-width: 50%;
-//   }
-// }
-//
-// @media screen and (max-width: 600px) {
-//   .column {
-//     -ms-flex: 100%;
-//     flex: 100%;
-//     max-width: 100%;
-//   }
-// }
+a,a:visited,a:hover,a:active{
+   -webkit-backface-visibility:hidden;
+           backface-visibility:hidden;
+ 	position:relative;
+   transition:0.5s color ease;
+ 	text-decoration:none;
+ 	color:rgb(28, 48, 59);
+ }
+
+ a:hover {
+ 	color:rgb(28, 48, 59);
+ }
+
+ a.after:after {
+   content: "";
+   transition:0.5s all ease;
+   -webkit-backface-visibility:hidden;
+           backface-visibility:hidden;
+   position:absolute;
+ }
+
+ a.after:after {
+   bottom:-0.25em;
+   height:2px;
+   width:0;
+   background: rgb(28, 48, 59);
+ }
+
+ a.first:after {
+   left:0;
+ }
+
+ a.after:hover:after{
+   width:100%;
+ }
