@@ -179,8 +179,9 @@ p {
 }
 .resume {
   font-family: 'Nunito Sans', sans-serif;
-  padding: 50px;
-  background-color: #efd6cd;
+  padding: 40px;
+  margin: 10px 40px;
+  border: solid 10px #ca7659;
   color: #1c303b;
 }
 .resume__title {
@@ -217,8 +218,9 @@ p {
   background: linear-gradient(to right bottom, #ca7659, #f3f5f8);
 }
 .about-me {
-  background-color: #efd6cd;
-  padding: 50px;
+  padding: 40px;
+  margin: 10px 40px;
+  border: solid 10px #ca7659;
   color: #1c303b;
 }
 .about-me__image {
@@ -236,7 +238,6 @@ p {
 .about-me__text {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
-  margin: 50px;
 }
 .about-me__item {
   margin: 20px;
@@ -244,7 +245,7 @@ p {
 .about-me__intro-and-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 50px;
 }
 .project {
   font-family: 'Nunito Sans', sans-serif;
@@ -258,6 +259,7 @@ p {
   width: 50px;
   margin: 10px;
   transition: all 0.3s;
+  fill: #1c303b;
 }
 .contact__svg:hover {
   transform: scale(1.1);
@@ -295,4 +297,21 @@ a.first:after {
 }
 a.after:hover:after {
   width: 100%;
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1c303b;
+  }
+}
+.cursor {
+  padding-right: 5px;
+  border-right: 0.15em solid #1c303b;
+  animation: blink-caret 0.75s step-end infinite;
+}
+.footer {
+  padding: 20px;
 }

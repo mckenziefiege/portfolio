@@ -10,6 +10,7 @@ import PlantDiary from './PlantDiary'
 import TurboTyping from './TurboTyping'
 import EventPlanner from './EventPlanner'
 import HomePage from './HomePage'
+import Footer from './Footer'
 
 class App extends Component {
 
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/" component={HomePage}/>
           </Switch>
         </div>
+        <Footer />
       </div>
     );
   }

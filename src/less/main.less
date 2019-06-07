@@ -195,8 +195,10 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 
 .resume {
   font-family: @font;
-  padding: 50px;
-  background-color: lighten(@orange, 30%);
+  padding: 40px;
+  margin: 10px 40px;
+  border: solid 10px @orange;
+  // background-color: lighten(@orange, 40%);
   color: 	rgb(28, 48, 59);
 
 
@@ -275,8 +277,11 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-me {
-  background-color: lighten(@orange, 30%);
-  padding: 50px;
+  // background-color: lighten(@orange, 30%);
+  padding: 40px;
+  margin: 10px 40px;
+  border: solid 10px @orange;
+  // padding: 50px;
   color: rgb(28, 48, 59);
 
   &__image {
@@ -296,7 +301,7 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   &__text {
     font-family: @font;
     font-size: 18px;
-    margin: 50px;
+
   }
 
   &__item {
@@ -306,7 +311,8 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   &__intro-and-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 50px;
+    // align-items: center;
   }
 }
 
@@ -348,6 +354,7 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   width: 50px;
   margin: 10px;
   transition: all .3s;
+  fill: rgb(28, 48, 59);
 
   &:hover {
     transform: scale(1.1);
@@ -390,3 +397,20 @@ a,a:visited,a:hover,a:active{
  a.after:hover:after{
    width:100%;
  }
+
+ @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(28, 48, 59) }
+}
+
+.cursor {
+  padding-right: 5px;
+  border-right: .15em solid rgb(28, 48, 59);
+  animation:
+  // typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+.footer {
+  padding: 20px;
+}
