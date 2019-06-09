@@ -15,11 +15,11 @@ class NovelFinds extends Component {
          <p>{"Ruby on Rails, React, Redux, CSS, Google Books API"}</p>
        </div>
         <div className="project__image-container">
-          <img alt="Novel Finds 1" className="project__image" src="https://user-images.githubusercontent.com/38592156/52527615-b6ccbc00-2c99-11e9-9a35-ea3112946b60.png" />
-          <img alt="Novel Finds 2" className="project__image" src="https://user-images.githubusercontent.com/38592156/52527609-b2080800-2c99-11e9-975f-46a84a74f569.png" />
-          <img alt="Novel Finds 3" className="project__image" src="https://user-images.githubusercontent.com/38592156/52527610-b3393500-2c99-11e9-98bc-5a4befae2d97.png" />
-          <img alt="Novel Finds 4" className="project__image" src="https://user-images.githubusercontent.com/38592156/52527613-b59b8f00-2c99-11e9-9d3e-087405803dcc.png" />
-          <img alt="Novel Finds 5" className="project__image" src="https://user-images.githubusercontent.com/38592156/52527614-b6342580-2c99-11e9-9d15-1dfa9a4ffc78.png" />
+          <img alt="Novel Finds 1" className="project__image" src="https://user-images.githubusercontent.com/38592156/59161262-5bc39e00-8aae-11e9-848e-0f21dbf38e74.png" />
+          <img alt="Novel Finds 2" className="project__image" src="https://user-images.githubusercontent.com/38592156/59161259-58301700-8aae-11e9-944f-b165f302fbcf.png" />
+          <img alt="Novel Finds 3" className="project__image" src="https://user-images.githubusercontent.com/38592156/59161258-56665380-8aae-11e9-9dba-f1d5b340859c.png" />
+          <img alt="Novel Finds 4" className="project__image" src="https://user-images.githubusercontent.com/38592156/59161260-59614400-8aae-11e9-98a6-352ddf7572be.png" />
+          <img alt="Novel Finds 5" className="project__image" src="https://user-images.githubusercontent.com/38592156/59161261-5a927100-8aae-11e9-912d-6c0c5806b301.png" />
         </div>
       </div>
     );

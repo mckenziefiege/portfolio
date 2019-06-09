@@ -24,6 +24,14 @@ class Portfolio extends Component {
                 </div>
               </div>
             </Link>
+            <Link to="/novel-finds">
+              <div className="portfolio__container">
+                <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/59161259-58301700-8aae-11e9-944f-b165f302fbcf.png" alt="Novel Finds"/>
+                <div className="portfolio__overlay">
+                  <div className="text">Novel Finds</div>
+                </div>
+              </div>
+            </Link>
             <Link to="/">
               <div className="portfolio__container">
                 <img className="portfolio__image" src={videoProfileTool} alt="Video Profile Tool"/>
@@ -50,6 +58,14 @@ class Portfolio extends Component {
                 <img className="portfolio__image" src={playQueue} alt="Player Queue"/>
                 <div className="portfolio__overlay">
                   <div className="text">Player Queue (JW Player)</div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/plant-diary">
+              <div className="portfolio__container">
+                <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/49955133-1db73a00-fed0-11e8-94e8-0f9b46ac0451.png" alt="Plant Diary"/>
+                <div className="portfolio__overlay">
+                  <div className="text">Plant Diary</div>
                 </div>
               </div>
             </Link>
@@ -83,15 +99,6 @@ class Portfolio extends Component {
                 </div>
               </div>
             </Link>
-
-            <Link to="/novel-finds">
-              <div className="portfolio__container">
-                <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/52527609-b2080800-2c99-11e9-975f-46a84a74f569.png" alt="Novel Finds"/>
-                <div className="portfolio__overlay">
-                  <div className="text">Novel Finds</div>
-                </div>
-              </div>
-            </Link>
             <Link to="/event-planner">
               <div className="portfolio__container">
                 <img className="portfolio__image" src={eventPlanner} alt="Event Planner"/>
@@ -105,14 +112,6 @@ class Portfolio extends Component {
                 <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/53203236-9fc18e80-35f6-11e9-9a5a-75c9a3312d6f.png" alt="Turbo Typing"/>
                 <div className="portfolio__overlay">
                   <div className="text">Turbo Typing</div>
-                </div>
-              </div>
-            </Link>
-            <Link to="/plant-diary">
-              <div className="portfolio__container">
-                <img className="portfolio__image" src="https://user-images.githubusercontent.com/38592156/49955133-1db73a00-fed0-11e8-94e8-0f9b46ac0451.png" alt="Plant Diary"/>
-                <div className="portfolio__overlay">
-                  <div className="text">Plant Diary</div>
                 </div>
               </div>
             </Link>
